@@ -6,12 +6,18 @@
     <title>Document</title>
     <script src="jquery-3.6.0.js"></script>
     <script src="bb.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	 <button onclick="loadFromSite()">Загрузить</button><br>
-	 <span>Имя: </span><input type="text" id="name"><br>
-	 <span>Фамилия: </span><input type="text" id="surname"><br>
-	 <button id="btn_prev" onclick="next()" disabled>Назад</button>
-	 <button id="btn_next" onclick="next()">Далее</button>
+    <button onclick="loadFromSite()">Загрузить</button><br>
+	<table id="tbl_all">
+		<tr>
+			<th>ID</th>
+			<th>Фамилия</th>
+			<th>Имя</th>
+		    <th></th>
+		</tr>
+	</table>
+	<div id="info"></div>
 </body>
 </html>
